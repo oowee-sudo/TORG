@@ -50,3 +50,13 @@ IP: max 64Kbyte
 link: max 1500byte
 -> fragmentation
 
+IP frame: 
+	header min len :20bytes(4x5(HLEN))
+TCP frame:
+	Mode connecté(e.g, calls)
+	piggy backing: data+acknowledgment in same frame
+	ackn(receiver will send window size too)=seq+1 (from sender ) in bytes
+	window size: data  number of bytes that can be sent without waiting for acknowledgment (buffer size in receiver) 
+	connexion : 3way handshake
+	deconnexion : 2 way handshake
+tftp: udp / ftp: tcp
