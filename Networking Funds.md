@@ -59,4 +59,11 @@ TCP frame:
 	window size: data  number of bytes that can be sent without waiting for acknowledgment (buffer size in receiver) 
 	connexion : 3way handshake
 	deconnexion : 2 way handshake
+	segmentation
 tftp: udp / ftp: tcp
+DHCP allocation : (UDP)
+	automatic
+	dynamic (time limited)
+	manually 
+	in its data we ll find the mac address 
+router does not pass any destination addr 255.255.255.255 only if its data contains dhcp (agent dhcp in router allows that )
